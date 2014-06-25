@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="CDuc\MainBundle\Entity\Message" table="message">
+    <indexes>
+      <index name="fk_message_topic1_idx" columns="topic_id"/>
+      <index name="fk_message_personnage2_idx" columns="personnage_id1"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="message" type="blob" column="message" nullable="true"/>
+    <many-to-one field="personnage1" target-entity="Personnage">
+      <join-columns>
+        <join-column name="personnage_id1" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="topic" target-entity="Topic">
+      <join-columns>
+        <join-column name="topic_id" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

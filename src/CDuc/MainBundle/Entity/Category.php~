@@ -1,0 +1,68 @@
+<?php
+
+namespace CDuc\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Category
+ *
+ * @ORM\Table(name="category")
+ * @ORM\Entity
+ */
+class Category
+{
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=45, nullable=true)
+     */
+    private $type;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255, nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="CDuc\MainBundle\Entity\Category", inversedBy="parentCategory")
+     * @ORM\JoinTable(name="category_has_category",
+     *   joinColumns={
+     *     @ORM\JoinColumn(name="parent_category", referencedColumnName="id")
+     *   },
+     *   inverseJoinColumns={
+     *     @ORM\JoinColumn(name="child_category", referencedColumnName="id")
+     *   }
+     * )
+     */
+    private $childCategory;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->childCategory = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+}

@@ -1,0 +1,206 @@
+<?php
+
+namespace CDuc\MainBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Skill
+ *
+ * @ORM\Table(name="skill", indexes={@ORM\Index(name="fk_skill_skill_level1_idx", columns={"skill_level_id"}), @ORM\Index(name="fk_skill_skill_type1_idx", columns={"skill_type_id"})})
+ * @ORM\Entity
+ */
+class Skill
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="label", type="string", length=45, nullable=true)
+     */
+    private $label;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \CDuc\MainBundle\Entity\SkillLevel
+     *
+     * @ORM\ManyToOne(targetEntity="CDuc\MainBundle\Entity\SkillLevel")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="skill_level_id", referencedColumnName="id")
+     * })
+     */
+    private $skillLevel;
+
+    /**
+     * @var \CDuc\MainBundle\Entity\SkillType
+     *
+     * @ORM\ManyToOne(targetEntity="CDuc\MainBundle\Entity\SkillType")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="skill_type_id", referencedColumnName="id")
+     * })
+     */
+    private $skillType;
+
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     *
+     * @ORM\ManyToMany(targetEntity="CDuc\MainBundle\Entity\Personnage", mappedBy="skill")
+     */
+    private $personnage;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->personnage = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     * @return Skill
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    /**
+     * Get label
+     *
+     * @return string 
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set skillLevel
+     *
+     * @param \CDuc\MainBundle\Entity\SkillLevel $skillLevel
+     * @return Skill
+     */
+    public function setSkillLevel(\CDuc\MainBundle\Entity\SkillLevel $skillLevel = null)
+    {
+        $this->skillLevel = $skillLevel;
+
+        return $this;
+    }
+
+    /**
+     * Get skillLevel
+     *
+     * @return \CDuc\MainBundle\Entity\SkillLevel 
+     */
+    public function getSkillLevel()
+    {
+        return $this->skillLevel;
+    }
+
+    /**
+     * Set skillType
+     *
+     * @param \CDuc\MainBundle\Entity\SkillType $skillType
+     * @return Skill
+     */
+    public function setSkillType(\CDuc\MainBundle\Entity\SkillType $skillType = null)
+    {
+        $this->skillType = $skillType;
+
+        return $this;
+    }
+
+    /**
+     * Get skillType
+     *
+     * @return \CDuc\MainBundle\Entity\SkillType 
+     */
+    public function getSkillType()
+    {
+        return $this->skillType;
+    }
+
+    /**
+     * Add personnage
+     *
+     * @param \CDuc\MainBundle\Entity\Personnage $personnage
+     * @return Skill
+     */
+    public function addPersonnage(\CDuc\MainBundle\Entity\Personnage $personnage)
+    {
+        $this->personnage[] = $personnage;
+
+        return $this;
+    }
+
+    /**
+     * Remove personnage
+     *
+     * @param \CDuc\MainBundle\Entity\Personnage $personnage
+     */
+    public function removePersonnage(\CDuc\MainBundle\Entity\Personnage $personnage)
+    {
+        $this->personnage->removeElement($personnage);
+    }
+
+    /**
+     * Get personnage
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getPersonnage()
+    {
+        return $this->personnage;
+    }
+    /**
+     * @var \DateTime
+     */
+    private $createdAt;
+
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     * @return Skill
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime 
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+}
