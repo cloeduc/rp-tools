@@ -1,9 +1,13 @@
-c_duc_page:
-    resource: "@CDucPageBundle/Resources/config/routing.yml"
+c_duc_campagne:
+    resource: "@CDucCampagneBundle/Resources/config/routing.yml"
     prefix:   /
 
-c_duc_main:
-    resource: "@CDucMainBundle/Resources/config/routing.yml"
+c_duc_charracter:
+    resource: "@CDucCharracterBundle/Resources/config/routing.yml"
+    prefix:   /
+
+c_duc_page:
+    resource: "@CDucPageBundle/Resources/config/routing.yml"
     prefix:   /
 
 fos_user_security:

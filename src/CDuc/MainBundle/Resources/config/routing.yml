@@ -1,3 +1,0 @@
-c_duc_main_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CDucMainBundle:Default:index }

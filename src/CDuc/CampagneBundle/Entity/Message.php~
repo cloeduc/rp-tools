@@ -1,0 +1,59 @@
+<?php
+
+namespace CDuc\CampagneBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Message
+ *
+ * @ORM\Table(name="message", indexes={@ORM\Index(name="fk_message_topic1_idx", columns={"topic_id"}), @ORM\Index(name="fk_message_personnage2_idx", columns={"personnage_id1"})})
+ * @ORM\Entity
+ */
+class Message
+{
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="message", type="blob", nullable=true)
+     */
+    private $message;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \CDuc\CharracterBundle\Entity\Personnage
+     *
+     * @ORM\ManyToOne(targetEntity="CDuc\CharracterBundle\Entity\Personnage")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="personnage_id", referencedColumnName="id")
+     * })
+     */
+    private $personnage;
+
+    /**
+     * @var \CDuc\CampagneBundle\Entity\Topic
+     *
+     * @ORM\ManyToOne(targetEntity="CDuc\CampagneBundle\Entity\Topic")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="topic_id", referencedColumnName="id")
+     * })
+     */
+    private $topic;
+
+
+}

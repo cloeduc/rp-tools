@@ -136,14 +136,19 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/hello')) {
+            // c_duc_campagne_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'c_duc_campagne_homepage')), array (  '_controller' => 'CDuc\\CampagneBundle\\Controller\\DefaultController::indexAction',));
+            }
+
+            // c_duc_charracter_homepage
+            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'c_duc_charracter_homepage')), array (  '_controller' => 'CDuc\\CharracterBundle\\Controller\\DefaultController::indexAction',));
+            }
+
             // c_duc_page_homepage
             if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'c_duc_page_homepage')), array (  '_controller' => 'CDuc\\PageBundle\\Controller\\DefaultController::indexAction',));
-            }
-
-            // c_duc_main_homepage
-            if (preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'c_duc_main_homepage')), array (  '_controller' => 'CDuc\\MainBundle\\Controller\\DefaultController::indexAction',));
             }
 
         }
