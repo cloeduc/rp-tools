@@ -15,32 +15,18 @@ use Doctrine\ORM\Mapping as ORM;
 class Joueur extends BaseUser
 {
     /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="created_at", type="datetime", nullable=false)
-     */
-    private $createdAt;
-
-    /**
      * @var string
      *
-     * @ORM\Column(name="firstname", type="string", length=45, nullable=false)
+     * @ORM\Column(name="firstname", type="string", length=45, nullable=true)
      */
     private $firstname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lastname", type="string", length=45, nullable=false)
+     * @ORM\Column(name="lastname", type="string", length=45, nullable=true)
      */
     private $lastname;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="mail", type="string", length=45, nullable=true)
-     */
-    private $mail;
 
     /**
      * @var string
@@ -60,29 +46,6 @@ class Joueur extends BaseUser
     {
         parent::__construct();
         // your own logic
-    }
-
-    /**
-     * Set createdAt
-     *
-     * @param \DateTime $createdAt
-     * @return Joueur
-     */
-    public function setCreatedAt($createdAt)
-    {
-        $this->createdAt = $createdAt;
-
-        return $this;
-    }
-
-    /**
-     * Get createdAt
-     *
-     * @return \DateTime 
-     */
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
     }
 
     /**
@@ -129,29 +92,6 @@ class Joueur extends BaseUser
     public function getLastname()
     {
         return $this->lastname;
-    }
-
-    /**
-     * Set mail
-     *
-     * @param string $mail
-     * @return Joueur
-     */
-    public function setMail($mail)
-    {
-        $this->mail = $mail;
-
-        return $this;
-    }
-
-    /**
-     * Get mail
-     *
-     * @return string 
-     */
-    public function getMail()
-    {
-        return $this->mail;
     }
 
     /**

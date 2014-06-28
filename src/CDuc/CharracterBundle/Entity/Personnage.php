@@ -43,21 +43,21 @@ class Personnage
     /**
      * @var string
      *
-     * @ORM\Column(name="background", type="blob", nullable=true)
+     * @ORM\Column(name="background", type="text", nullable=true)
      */
     private $background;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="blob", nullable=true)
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="public_story", type="blob", nullable=true)
+     * @ORM\Column(name="public_story", type="text", nullable=true)
      */
     private $publicStory;
 
@@ -86,7 +86,6 @@ class Personnage
      * })
      */
     private $joueur;
-
 
 
     /**

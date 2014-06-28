@@ -55,11 +55,6 @@ class Skill
      */
     private $skillLevel;
 
-    public function __construct()
-    {
-        $this->createdAt = new \DateTime();
-    }
-
     /**
      * Set label
      *

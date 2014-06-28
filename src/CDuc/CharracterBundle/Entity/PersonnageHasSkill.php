@@ -61,6 +61,11 @@ class PersonnageHasSkill
     private $topic;
 
 
+    public function __construct()
+    {
+        $this->timestamp = new \DateTime();
+    }
+
 
     /**
      * Set timestamp

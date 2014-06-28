@@ -5,9 +5,12 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    </head>
+        <link href="{{ asset('css/foundation.css') }}" rel="stylesheet" type="text/css" />
+        <script src="{{ asset('js/vendor/modernizr.js') }}"></script>
     <body>
         {% block body %}{% endblock %}
+        <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+        <script src="{{ asset('js/foundation.min.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
