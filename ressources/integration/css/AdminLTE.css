@@ -59,6 +59,7 @@ body > .header {
 .main-side {
   background-color: #f9f9f9;
   margin-left: 220px;
+  padding:20px;
 }
 /*left side - contains sidebar*/
 .left-side {
@@ -68,10 +69,13 @@ body > .header {
 }
 /*left side - contains sidebar*/
 .right-side  {
-  position: absolute;
+  position: fixed;
   width: 220px;
   top: 0;
   right: 0;
+  height: 70%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .right-side  .sidebar {
   background-color: #333;
@@ -85,6 +89,7 @@ a.toggle-characters {
   background: #333;
   padding:10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 @media screen and (min-width: 992px) {
   .left-side {
@@ -107,6 +112,84 @@ a.toggle-characters {
   .right-side {
     margin-left: 0;
   }
+}
+/* Tables */
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+      line-height: 1.42857;
+    padding: 2px 8px;
+    vertical-align: top;
+}
+/* table categires */
+.categorie-section a {
+    color:#DF985D;
+}
+.categorie-section h1{
+  margin: 0;
+  font-size: 30px;
+  color:#fff;
+}
+.categorie-section .cat-title {
+  background: #DF985D;
+  border: 10px;
+  vertical-align: middle;
+  padding:5px;
+}
+.categorie-section .cat-title img{
+  width:40px;
+  height: 40px;
+  margin-right: 6px;
+}
+.categorie-section {
+  color: #333333;
+  background: none repeat scroll 0 0 #f5f5f5;
+  margin-bottom: 70px;
+
+}
+.categorie-section .start-entry{
+  border-top:5px #eee solid;
+}
+.categorie-section tr th.to-read,
+.categorie-section tr td.to-read,  
+.categorie-section tr th.last-message,
+.categorie-section tr td.last-message{
+    width: 30%;
+    border: none;
+}
+.categorie-section tr th.to-read a,
+.categorie-section tr td.to-read a{
+  color:#717171;
+}
+.categorie-section tr th.to-read a:hover,
+.categorie-section tr td.to-read a:hover{
+  color:#444444;
+}
+.categorie-section tr th.to-read,
+.categorie-section tr td.to-read {
+  border-left:5px #eee solid;
+}
+.categorie-section tr th.to-read,
+.categorie-section tr th.last-message
+{
+
+}
+.categorie-section tr td.last-message,
+.categorie-section tr td.to-read {
+  border-bottom:1px #eee solid;
+}
+.categorie-section tr td.last-message {
+  font-size: 12px;
+  line-height: 15px;
+}
+.categorie-section tr td h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.categorie-section tr:hover {
+  background: #f5f5f5;
+}
+.categorie-section tr td.cat-description {
+  width:55%;
 }
 /*
     By default the layout is not fixed but if you add the class .fixed to the body element
@@ -131,9 +214,9 @@ body.fixed .wrapper {
 }
 /* Content */
 .content {
-  padding: 20px 15px;
   background: #f9f9f9;
   overflow: auto;
+  width:90%
 }
 /* Utility */
 /* H1 - H6 font */
@@ -458,6 +541,11 @@ body > .header .logo .icon {
   -moz-border-radius: 2px;
   border-radius: 2px;
 }
+.breadcrumb img {
+  width:40px;
+  height: 40px;
+  margin:5px;
+}
 .right-side > .content-header > .breadcrumb > li > a {
   color: #444;
   text-decoration: none;
@@ -522,9 +610,6 @@ body > .header .logo .icon {
     Component: Sidebar
 --------------------------
 */
-.sidebar {
-  margin-bottom: 5px;
-}
 .sidebar .sidebar-form input:focus {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -533,7 +618,7 @@ body > .header .logo .icon {
 }
 .sidebar .sidebar-menu {
   list-style: none;
-  margin: 55px 0px;
+  margin-bottom: 55px;
   padding: 0;
 }
 .sidebar .sidebar-menu > li {
@@ -2631,13 +2716,32 @@ Component: timeline
 .skin-black .user-panel > .image > img {
   border: 5px solid #444;
 }
- .user-panel .treeview  img{
+ .treeview a:hover {
+  background: #333333;
+ }
+ .treeview  img{
   width:40px;
   height: 40px;
-  margin: 10px;
+  margin: 5px;
 }
- .user-panel .treeview {
-  line-height: 40px;
+ .sidebar-menu > li >  a{
+  line-height: 45px;
+  padding:0px;
+}
+ .sidebar-menu > li  {
+  clear: both;
+  min-height: 40px;
+  margin-bottom: 30px;
+}
+ .user-panel .sidebar-menu > li select {
+  background: #444;
+  color:#fff;
+  border: 3px solid #444;
+  font-size: 14px;
+  height:40px;
+}
+ .user-panel .sidebar-menu > li select option:hover {
+
 }
 .skin-black .user-panel > .info,
 .skin-black .user-panel > .info > a {
@@ -2677,7 +2781,7 @@ Component: timeline
   background: #444;
 }
 .skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
-  margin: 0 1px;
+  margin: 0px 1px 10px 1px;
   background: #444;
 }
 .skin-black .left-side {
