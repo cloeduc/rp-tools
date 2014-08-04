@@ -146,6 +146,7 @@ function fix_sidebar() {
         height: ($(window).height() - $(".header").height()) + "px",
         color: "rgba(0,0,0,0.2)"
     });
+    $(".sidebar-userpanel").height('500px');
 }
 function change_layout() {
     $("body").toggleClass("fixed");

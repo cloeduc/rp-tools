@@ -1,0 +1,10 @@
+<script>
+$('table tbody').hide();
+$('table:first tbody').show();
+$(function() {
+	$("#accordion").accordion({header: "thead", collapsible: true, beforeActivate: function( event, ui ) {
+		ui.newHeader.find('.cat-title').css('color', '#fff');
+		ui.oldHeader.find('.cat-title').css('color', '#DF985D');
+	}});
+});
+</script>

@@ -1,0 +1,64 @@
+x
+  <style>
+  .ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    margin: .8em 0 .2em;
+    line-height: 1.5;
+  }
+  </style>
+  <script>
+  $.widget( "custom.catcomplete", $.ui.autocomplete, {
+    _create: function() {
+      this._super();
+      this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+    },
+    _renderMenu: function( ul, items ) {
+      var that = this,
+        currentCategory = "";
+      $.each( items, function( index, item ) {
+        var li;
+        if ( item.category != currentCategory ) {
+          ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+          currentCategory = item.category;
+        }
+        li = that._renderItemData( ul, item );
+        if ( item.category ) {
+          li.attr( "aria-label", item.category + " : " + item.label );
+        }
+      });
+    }
+  });
+  </script>
+  <script>
+  $(function() {
+    var data = [
+      { label: "Naola Muspell", category: "Personnages", id: 1 },
+      { label: "Mattéo Muspell", category: "Personnages", id: 2 },
+      { label: "Xavier Mycroft", category: "Personnages", id:3 },
+      { label: "Esther Mysroft", category: "Personnages", id:4 },
+      { label: "Alix Elfric", category: "Personnages", id:5 },
+      { label: "Usem Jejel", category: "Personnages", id:6 },
+      { label: "Mordret", category: "Personnages", id:7 },
+      { label: "Cloé", category: "Joueurs", id:1 },
+      { label: "Tatou", category: "Joueurs", id : 2 }
+    ];
+ 
+    $( "#search" ).catcomplete({
+      delay: 0,
+      source: data,
+      focus: function( event, ui ) {
+      	$('.peoples .user-panel').parent().fadeIn();
+      	$('.peoples .display').removeClass('display');
+      },
+  	  select: function( event, ui ) {
+  		if(ui.item.category == 'Joueurs') {
+  			$('.peoples .user-panel[player='+ui.item.id+']').addClass('display');
+  			$('.peoples .user-panel').not('.display').parent().fadeOut();
+  		} else if (ui.item.category == 'Personnages')  {
+  			window.location = '/integration/character.php?id='+ui.item.id;
+  		}
+  		},
+});
+    });
+  </script>
