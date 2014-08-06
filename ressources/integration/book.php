@@ -201,7 +201,7 @@
                         <p>Tout sorcier, quelque soit son origine, est admis dans une école de sorcier, Poudlard, Drumstrang, Beaubatons, pour les plus connus. Et tout sorcier a ainsi acquis un certain nombre de savoir faire, à l’école, donc, au sein de la communauté magique, ou par des expériences personnelles. </p>
                         <p><strong>Points à répartir entre toutes les compétences :</strong> 450</p>
                       </header>
-                      <section>
+                      <section id="common_skills">
                         <header>
                           <h2> <a name="common_skills"></a>Compétences communes</h2>
                           <p>
@@ -232,67 +232,73 @@
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/phone.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Connaissance des Moldus </h1>
                                 </header>
-                                <p>
-                                  Certains sorciers ne sont pas du tout en contact avec des Moldus, que ce soit pendant leur enfance ou durant l’école. D’autres, au contraire, sont nés de parents moldus, d’un côté ou des deux, ou ont véccu parmis eux. Et enfin, certains sorciers se prennent de passion pour ces gens qui vivent étrangement sans magie et qui s’en sortent tout aussi bien. </p>
-                                  <h2>Repères</h2>
-                                  <p>De là, vous pouvez établir le degré de connaissance de votre personnage concernant les moldus.</p>
-                                  <p>Un personnage avec une connaissance de <strong>10</strong> sera capable de manier la monnaie moldu et connaitra quelques subtilités, comme leur manie de mettre des pantalon et non des robes.</p>
-                                  <p> A 40, vous pourrez même avoir quelque notion de ce qu’est une télévision. A 60, vous pouvez même en changer les chaines!</p>
-                                  <p>Enfin à 100, vous pouvez vraiment être considéré comme l’un des leurs.
-                                  </p>
-                                  <footer>
-                                    <h2>Références :</h2>
-                                    <ul>
-                                      <li>
-                                        <a href="http://fr.harrypotter.wikia.com/wiki/%C3%89tude_des_Moldus" target="_blank">Wiki Potter - Etudes des moldus</a>
-                                      </li>
-                                    </ul>
-                                  </footer>
+                                <div class="skill-description">
+                                  <p>
+                                    Certains sorciers ne sont pas du tout en contact avec des Moldus, que ce soit pendant leur enfance ou durant l’école. D’autres, au contraire, sont nés de parents moldus, d’un côté ou des deux, ou ont véccu parmis eux. Et enfin, certains sorciers se prennent de passion pour ces gens qui vivent étrangement sans magie et qui s’en sortent tout aussi bien. </p>
+                                    <h2>Repères</h2>
+                                    <p>De là, vous pouvez établir le degré de connaissance de votre personnage concernant les moldus.</p>
+                                    <p>Un personnage avec une connaissance de <strong>10</strong> sera capable de manier la monnaie moldu et connaitra quelques subtilités, comme leur manie de mettre des pantalon et non des robes.</p>
+                                    <p> A 40, vous pourrez même avoir quelque notion de ce qu’est une télévision. A 60, vous pouvez même en changer les chaines!</p>
+                                    <p>Enfin à 100, vous pouvez vraiment être considéré comme l’un des leurs.
+                                    </p>
+                                    <footer>
+                                      <h2>Références :</h2>
+                                      <ul>
+                                        <li>
+                                          <a href="http://fr.harrypotter.wikia.com/wiki/%C3%89tude_des_Moldus" target="_blank">Wiki Potter - Etudes des moldus</a>
+                                        </li>
+                                      </ul>
+                                    </footer>
+                                </div>
                                 </article>
                               </div>
                               <div class="col-md-4">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/educative.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Magie théorique</h1>
                                   </header>
-                                  <p>La magie, ça s’apprends dans des livres. Et ensuite, ça s’essaye. De toute façon, il y a beaucoup de choses que l’on apprend que l’on utilise pas, comme les sortilèges impardonnables, par exemple. La magie théorique va symboliser l’amour de votre personnage pour les livres, la théorie pur, et tout ce qu’il ne peut pas forcément expérimenter ou mettre en pratique.</p> 
-                                  <h2>Repères</h2>
-                                  <p>A 10 points, vous lisez régulièrement des livres de la bibliothèque. A 60, vous vous arrangez toujours pour avoir accès à la réserve pour lire des choses très poussées. </p>
-                                  <p>A 100, vous êtes un vrai rat de librairie. Le département recherche doit sans doute vous voir tous les jours!</p>
+                                  <div class="skill-description">
+                                    <p>La magie, ça s’apprends dans des livres. Et ensuite, ça s’essaye. De toute façon, il y a beaucoup de choses que l’on apprend que l’on utilise pas, comme les sortilèges impardonnables, par exemple. La magie théorique va symboliser l’amour de votre personnage pour les livres, la théorie pur, et tout ce qu’il ne peut pas forcément expérimenter ou mettre en pratique.</p> 
+                                    <h2>Repères</h2>
+                                    <p>A 10 points, vous lisez régulièrement des livres de la bibliothèque. A 60, vous vous arrangez toujours pour avoir accès à la réserve pour lire des choses très poussées. </p>
+                                    <p>A 100, vous êtes un vrai rat de librairie. Le département recherche doit sans doute vous voir tous les jours!</p>
+                                </div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/plant.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Botanique</h1>
                                   </header>
-                                  <p>La botanique est plus ou moins apprise à Poudlard. Mais soyons honnête, ce n’est pas pour autant que vous êtes forcément un crack en la matière. </p>
-                                  <p>Ou alors c’est justement ce qui a poussé la passion de votre personnage à se développer. Cette compétence vous permettra de ne pas tomber au coeur d’un filet du diable. </p>
-                                  <h2>Repères</h2>
-                                  <footer>
-                                    <h2>Références :</h2>
-                                    <ul>
-                                      <li>
-                                        <a href="http://fr.harrypotter.wikia.com/wiki/Botanique" target="_blank">Wiki Potter - Etudes des moldus</a>
-                                      </li>
-                                      <li>
-                                        <a href="http://www.encyclopedie-hp.org/magic/herbology-class.php" target="_blank">Wiki Potter - Etudes des moldus</a>
-                                      </li>
-                                      <li>
-                                        <a href="http://www.encyclopedie-hp.org/herbology/herbology-a.php" target="_blank">Wiki Potter - Etudes des moldus</a>
-                                      </li>
-                                    </ul>
-                                  </footer>
+                                  <div class="skill-description">
+                                    <p>La botanique est plus ou moins apprise à Poudlard. Mais soyons honnête, ce n’est pas pour autant que vous êtes forcément un crack en la matière. </p>
+                                    <p>Ou alors c’est justement ce qui a poussé la passion de votre personnage à se développer. Cette compétence vous permettra de ne pas tomber au coeur d’un filet du diable. </p>
+                                    <h2>Repères</h2>
+                                    <footer>
+                                      <h2>Références :</h2>
+                                      <ul>
+                                        <li>
+                                          <a href="http://fr.harrypotter.wikia.com/wiki/Botanique" target="_blank">Wiki Potter - Etudes des moldus</a>
+                                        </li>
+                                        <li>
+                                          <a href="http://www.encyclopedie-hp.org/magic/herbology-class.php" target="_blank">Wiki Potter - Etudes des moldus</a>
+                                        </li>
+                                        <li>
+                                          <a href="http://www.encyclopedie-hp.org/herbology/herbology-a.php" target="_blank">Wiki Potter - Etudes des moldus</a>
+                                        </li>
+                                      </ul>
+                                    </footer>
+                                  </div>
                                 </article>
                               </div>
                             </div>
@@ -301,30 +307,33 @@
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/potion.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Potion</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/moon.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Divination</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/glasses.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Culture</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                             </div>
@@ -333,30 +342,33 @@
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/balais.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Vol</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                             <div class="col-md-4 ">
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/dragon.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Connaissance des créatures magiques</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                             <div class="col-md-4 ">
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/mind.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Oclumencie</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                           </div>
@@ -365,27 +377,29 @@
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/fight.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Corps à corps</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                             <div class="col-md-4 ">
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/duel.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Duel</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                           </div>
                         </section>
                       </section>
-                      <section>
-                        <header>
+                      <section id="special_skills">
+                        <header >
                           <h2><a name="special_skills"></a>Compétences Spéciales</h2>
                           <p>
                             Les compétences spéciales sont des choses qu’on n’apprends pas au premier coin de rue. Techniques interdites, apprentissage complexe, technique de combat insolite (un sorcier, ça se bat avant tout avec sa baguette…), connaissance résultant d’expérience personnelles particulière…                           </p>
@@ -416,30 +430,33 @@
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/etincelle.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Magie Noire</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/aquarius.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Connaissances Inter-espèces</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/medecine.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Médecine</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                             </div>
@@ -448,36 +465,39 @@
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/sword.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Armes Blanches</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/gun.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Arme à feu</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                               <div class="col-md-4 ">
                                 <article>
                                   <header>
                                     <div class="image pull-left">
-                                      <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                      <img src="img/skills/mind2.png" class="img-circle img-responsive" />
                                     </div>
                                     <h1>Légilimencie</h1>
                                   </header>
+                                  <div class="skill-description"></div>
                                 </article>
                               </div>
                             </div>
                           </section>
                         </section>
-                        <section>
+                        <section id="awsome_skills">
                           <header>
                             <h2><a name="awsome_skills"></a>Compétences rares</h2>
                             <p>
@@ -507,20 +527,22 @@
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/oldmagic.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Magie ancienne</h1>
                                 </header>
                               </article>
+                              <div class="skill-description"></div>
                             </div>
                             <div class="col-md-4 ">
                               <article>
                                 <header>
                                   <div class="image pull-left">
-                                    <img src="img/avatars/nao.jpg" class="img-circle img-responsive" />
+                                    <img src="img/skills/runes.png" class="img-circle img-responsive" />
                                   </div>
                                   <h1>Runes</h1>
                                 </header>
+                                <div class="skill-description"></div>
                               </article>
                             </div>
                           </div>

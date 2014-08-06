@@ -88,6 +88,10 @@
 	background: #f4f4f4;
 	margin-bottom: 10px;
 }
+.book .skills article header
+{
+	cursor: pointer;
+}
 .book .skills article h1
 {
 	font-size: 24px;
@@ -104,4 +108,29 @@
 .skills .image img{
 	max-width: 30%;
 	margin: auto;
+}
+.skills a {
+	color:#515E73;
+}
+.skill-description {
+	display: none;
+}
+#common_skills article h1 {
+	color:#74C2AF;
+}
+ #common_skills article a:hover{
+	color:#B3DCD3;
+}
+#awsome_skills article h1 {
+	color:#C85D5D;
+}
+#awsome_skills article a:hover
+{
+	color:#D5A5A5;
+} 
+#special_skills article h1 {
+	color:#DF985D;
+}
+#special_skills article a:hover {
+	color:#DFAE8B;
 }
