@@ -6,16 +6,17 @@
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/docs.min.css" rel="stylesheet" type="text/css" />
         <!-- font Awesome -->
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <!-- Ionicons -->
-        <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-         <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery-ui-1.10.3.custom.css">
-
+        <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery-ui-1.10.3.theme.min.css">
+        <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery-ui-1.10.3.custom.min.css">
+        <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery.ui.1.10.3.ie.min.css">
         <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
 
+        <link href="css/docs.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/roleplay-tools.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -36,3 +37,4 @@
 
             <!-- Main side column. Contains the navbar and content of the page -->
             <div class="main-side">
+               

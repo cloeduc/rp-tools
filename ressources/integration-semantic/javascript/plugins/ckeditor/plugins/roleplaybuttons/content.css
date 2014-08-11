@@ -1,0 +1,28 @@
+.cke_button__murmurer_label, .cke_button__penser_label, .cke_button__parler_label, .cke_button__crier_label, .cke_button__decrire_label, .cke_button__horsjeu_label  {
+	display: inline!important;
+	padding: 0px 3px;
+	font-size: 14px;
+	color:#313131;
+}
+.cke_button__murmurer_icon, .cke_button__penser_icon, .cke_button__parler_icon, .cke_button__crier_icon, .cke_button__decrire_icon, .cke_button__horsjeu_icon {
+	display: none;
+}
+span.speak, .cke_button__parler_label {
+	color:black;
+}
+span.murmur, .cke_button__murmurer_label {
+	color:#6a6a6a;
+	font-size: 11px;
+}
+span.describe, .cke_button__decrire_label {
+	font-style: italic;
+	color: #313131;
+}
+span.yell, .cke_button__crier_label {
+	text-transform: uppercase;
+}
+span.think, .cke_button__penser_label {
+	color:#6a6a6a;
+}
+
+/* syles pour ckeditor */

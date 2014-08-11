@@ -5,15 +5,15 @@
         <script src="js/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <!-- Morris.js charts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-        <!--<script src="js/plugins/morris/morris.min.js" type="text/javascript"></script>-->
-        <!-- Sparkline -->
-        
+        <script src="js/role-play-tools.js" type="text/javascript"></script>
 
         <!-- AdminLTE App -->
         <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+        <!-- bootbox code -->
+        <script src="js/plugins/bootbox/bootbox.min.js"></script>
+
         <script>
+         $(".alert").alert()
          $('.toggle-characters').click(function() {
             var $marginLefty = $(this).next();
             $marginLefty.animate({

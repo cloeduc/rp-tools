@@ -2,11 +2,21 @@
 
 include('parts/header.php'); ?>
 <!-- Content Header (Page header) -->
+
 <section class="content-header">
+
     <ol class="breadcrumb">
         <li><img src="img/icons/globe.png"/>La campagne</li>
         <li class="active">Le forum</li>
     </ol>
+    <div class="row">
+    <div class="col-md-10">
+     <div class="alert alert-success " role="alert">
+         Poney
+         <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    </div>
+        </div>
+        </div>
     <h1>
         Le forum
     </h1>

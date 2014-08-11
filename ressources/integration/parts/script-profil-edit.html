@@ -1,0 +1,33 @@
+<script src="js/plugins/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {  
+    // You can define it before replacing the editor
+    CKEDITOR.on('instanceReady', function(evt){
+        // Do your bindings and other actions here for example
+        // You can access each editor that this event has fired on from the event
+        var editor = evt.editor;
+    });
+
+   // replace editor
+    var editorShort = 	CKEDITOR.replace('player-description');
+});
+$(document).on("click", ".remove-character", function(e) {
+    var characterbox = $(this).parent().parent();
+    var characterId = $(this).parent().attr('character');
+    bootbox.confirm("Retirer ce personnage au joueur ?", function(result) {
+        if(result) {
+            characterbox.fadeOut();
+            characterbox.remove();
+        }
+    }); 
+});
+$(document).on("click", "button#addc", function(e) {
+    $('form#add-character').slideToggle();
+});
+$(document).on("submit", "form#add-character", function(e) {
+    //todo ajax code
+    //la on récupère le code n'importe comment
+    $('.peoples .row .col-lg-2').first().clone().insertBefore($(this).parent());
+    return false;
+});
+</script>

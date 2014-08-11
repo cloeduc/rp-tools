@@ -55,6 +55,7 @@ include('parts/header.php'); ?>
                     <img src="img/icons/heart.png" /> 
                     <div class="progress">
                       <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <label><input type="text" value="70" class="progress-input"/> points</label>
                         <span class="sr-only"></span>
                       </div>
                     </div>
@@ -63,7 +64,10 @@ include('parts/header.php'); ?>
                     <img src="img/icons/bolt.png" />
                     <div class="progress">
                       <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                        <!-- Admin Only-->
+                          <label><input type="text" value="70" class="progress-input"/> points</label>
                         <span class="sr-only"></span>
+                        <!-- // -->
                       </div>
                     </div>
                 </div>

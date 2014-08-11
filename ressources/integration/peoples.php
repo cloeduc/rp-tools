@@ -84,7 +84,7 @@ array(
 <section class="content peoples">
 	<div class="row">
 	<?php foreach($characters as $character):?>
-		<div class="col-lg-2 col-xs-8">
+		<div class="col-lg-3 col-xs-8">
 			<div class="user-panel" player="<?php echo  $character['player']?>" character="<?php echo  $character['id']?>">
 				<a href="character.php?id=<?php echo  $character['id']?>">
 					<div class="image">

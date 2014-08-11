@@ -17,12 +17,8 @@ include('parts/header.php'); ?>
 
 <!-- Main content -->
 <section class="content forum">
-<button type="button" class="btn btn-default">Nouveau sujet dans la salle d'entrainement</button>
-<ul id="accordion">
-<?php for($i=1; $i <= 3; $i++) :?>
-	<li>
 	<table class="table table-responsive categorie-section forum-section">
-	      <thead id="cat-<?php echo $i;?>">
+	      <thead id="cat-1">
 	        <tr>
 	          <th colspan="2" class="cat-title main-title">                      
 	            <div class="pull-left">
@@ -52,10 +48,20 @@ include('parts/header.php'); ?>
 	    <?php endfor; ?>
 	    </tbody>
 	</table>
-	</li>
-<?php endfor; ?> 
-</ul>
-    <button type="button" class="btn btn-default">Nouveau sujet dans la salle d'entrainement</button>
+<div class='box collapsed-box'>
+    <div class='box-header'>
+    	<div class=" box-tools">
+		<span class="glyphicon glyphicon-share-alt"> </span> <h3 class='box-title' data-widget='collapse'>Nouveau sujet dans "Salle d'entrainement"</h3>
+        </div><!-- /. tools -->
+    </div><!-- /.box-header -->
+    <div class='box-body pad'>
+        <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+            </textarea>
+            <button type="button" class="btn btn-default">Répondre</button>                   
+        </form>
+    </div>
+</div>
 
 </section><!-- /.content -->
 

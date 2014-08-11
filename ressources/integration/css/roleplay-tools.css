@@ -1,0 +1,356 @@
+
+/* Generals styles */
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.highlight {
+    background-color:#FFFF00;	
+}
+
+/*Call outs */
+.bs-callout {
+    background: #fff;
+}
+.bs-callout-info strong {
+    color:#5BC0DE;
+}
+.bs-callout-warning strong {
+    color:#F0AD4E;
+}
+.bs-callout-danger strong {
+    color:#D9534F;
+}
+.bs-callout-success strong, .bs-callout-success h4 {
+    color:#73C2AF;
+}
+.bs-callout.bs-callout-success {
+    border-left-color: #73C2AF;
+}
+
+/* Progress bar*/
+.progress-bar 
+{
+    text-align: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.progress-bar-success {
+    background: #74C2AF;
+}
+.progress-bar-warning {
+    background: #DF985D;
+}
+.progress-bar-danger {
+    background: #C85D5D;
+}
+
+/* search bar styles */
+#navigation-search {
+    float: right;
+    margin: 8px 0px 5px 5px;
+    cursor: pointer;
+}
+#findingSentence {
+    font-style: italic;
+    color:gray;
+    float:left;
+    margin:8px 5px 5px 0px;
+}
+#navigation-search {
+    display: none;
+}
+#navigation-search .search-disabled {
+    color:gray;
+    cursor: default;
+}
+/* User panel */
+.user-panel .character-skills > img{
+    height: 30px;
+    left: -4px;
+    position: absolute;
+    top: -6px;
+    width: 30px;
+}
+.user-panel .character-skills
+{
+    position: relative;
+}
+/* skin-black 
+
+/* Book styles */
+#book-navigation {
+    top:0;
+    left:240px;
+    right:20px;
+    position: fixed;
+    z-index: 2000;
+}
+#placenavigation {
+    position: relative;
+}
+.navbar-brand {
+    height: 100%;
+}
+.navbar-brand img{
+    height: 30px;
+    width: auto;
+    margin: 15px;
+}
+.skills .image {
+    text-align: center;
+}
+/* Book section */
+.book .book-section .chapter-header h1{
+    background: #77b3d4;
+    color: #fff;
+    border-top-right-radius: 30px;
+}
+.book .book-section .chapter-header h1 img{
+    margin-left: -35px;
+}
+.book .book-section .chapter-header img {
+    width: 60px;
+}
+.book .book-section {
+    margin-bottom: 50px;
+    background: #f0f0f0;
+    border-bottom:5px solid #77b3d4;
+    border-top-right-radius: 30px;
+    text-align: justify;
+}
+/* section header*/
+.book .book-section > article, .book .book-section > section, .book .book-section header p {
+    padding: 0px 20px 20px 20px;
+}
+.book .book-section > article, .book .book-section > section {
+
+}
+.book .book-section header p  
+{
+    font-style: italic;
+    font-size: 16px;
+    color:#4f5d73;
+}
+
+.book .skills article 
+{
+    padding: 10px;
+    background: #f4f4f4;
+    margin-bottom: 10px;
+}
+.book .skills article header
+{
+    cursor: pointer;
+}
+.book .skills article h1
+{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: #c75c5c;
+}
+.book .skills article h2
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #4f5d73;
+}
+/*Aptitude section */
+#aptitudes h4 {
+    color:#5BC0DE;
+    font-weight: bold;
+}
+/*skills generalities*/
+.skills .image img{
+    max-width: 30%;
+    margin: auto;
+}
+.skills a {
+    color:#515E73;
+}
+.skill-description {
+    display: none;
+}
+#common_skills article h1,  .character-skill.common_skill h1 {
+    color:#74C2AF;
+}
+#common_skills article a:hover{
+    color:#B3DCD3;
+}
+#awsome_skills article h1, .character-skill.awsome_skill h1 {
+    color:#C85D5D;
+}
+#awsome_skills article a:hover
+{
+    color:#D5A5A5;
+} 
+#special_skills article h1, .character-skill.special_skill h1 {
+    color:#DF985D;
+}
+#special_skills article a:hover {
+    color:#DFAE8B;
+}
+
+/* character */
+/* skills list */
+section.skills {
+    background: #f5f5f5;
+    padding: 10px;
+    margin:20px 0px;
+
+}
+section.skills header h1{
+    padding: 10px;
+    margin: 0px;
+}
+section.skills .character-skill {
+    border-radius: 5px;
+    height:110px;
+    overflow: hidden;
+    margin: 5px;
+    background: #f1f1f1;
+}
+
+section.skills .skill-value  {
+    position: relative;
+    margin-left:40px;
+}
+section.skills .character-skill h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+section.skills .skill-value > img {
+    height: 50px;
+    left: -45px;
+    position: absolute;
+    top: -13px;
+    width: 50px;
+}
+#aptitudes .character-skill {
+    padding:15px;
+    height: 55px;
+}
+#aptitudes .character-skill h1 {
+    float:left;
+    margin:0px 10px;
+    width: 40%;
+    font-size: 16px;
+}
+/* specific style function to skill type */
+.character-skill.common_skill  .progress-bar-success,  .character-skill.common_skill  .progress-bar-warning, .character-skill.common_skill  .progress-bar-danger{
+    background: #74C2AF;
+}
+.character-skill.special_skill  .progress-bar-warning, .character-skill.special_skill  .progress-bar-danger, .character-skill.special_skill  .progress-bar-success {
+    background: #DF985D;
+}
+
+.character-skill.awsome_skill  .progress-bar-success, .character-skill.awsome_skill  .progress-bar-warning, .character-skill.awsome_skill  .progress-bar-danger {
+    background: #C85D5D;
+}
+
+/* Character */
+.character #character-presentation .user-panel  {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.character #character-presentation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.character #character-presentation ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 120%;
+}
+.character #character-presentation  {
+    background: #f6f6f6;
+}
+.character #character-presentation  .user-panel {
+    background: #444;
+}
+.progress-bar label {
+    position:absolute;
+    right:10px;
+    color:#4F5D73;
+    cursor: pointer;
+}
+input.progress-input {
+    background: none;
+    border: medium none;
+    color: #4F5D73;
+    float: left;
+    cursor: pointer;
+    padding: 1px;
+    text-align: right;
+    box-shadow: none;
+    width:30px;
+    margin-right: 5px;
+}
+
+.profil-informations input {
+    font-size: inherit;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.profil-informations input:focus {
+    color:#fff;
+    background: #74C2AF;
+}
+#input-job input {
+    width: 100%;
+    float:right;
+}
+.total-aptitude {
+    font-size: 22px;
+    color:#00c0ef;
+    font-weight: bold;
+}
+.danger {
+color:#C85D5D;!important
+}
+
+/* profil */
+.profil-informations img {
+    max-width: 200px;
+    text-align: right;
+}
+.remove-character {
+position: absolute;
+    right: 0;
+    top:0;
+    z-index: 100;
+}
+.add-character {
+    background: #f4f4f4;
+    text-align: center;
+    padding : 20px 0px;
+    color:#008D4C;
+    font-weight: bold;
+}
+.add-character form {
+    display:none;
+}
+
+
+@media(max-width:767px){
+.content {
+    width: 100%;
+    margin: auto;
+}
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
