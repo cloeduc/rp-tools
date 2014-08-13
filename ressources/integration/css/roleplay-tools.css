@@ -343,7 +343,258 @@ position: absolute;
 .add-character form {
     display:none;
 }
+/* Forum */
+/* Tables */
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    line-height: 1.42857;
+    padding: 2px 8px;
+    vertical-align: middle;
+}
+/* table categires */
+.categorie-section {
+  color: #333333;
+  background: none repeat scroll 0 0 #f5f5f5;
+  margin-bottom: 70px;
+  vertical-align: middle;
+}
+.categorie-section a {
+   color:#DF985D;
+}
+.categorie-section td.last-messages a {
+   color:#EEEEEE;
+}
+.categorie-section h1
+{
+  margin: 5px;
+  font-size: 30px;
+}
+.categorie-section h2 a
+{
+    color:#555;
+}
+.categorie-section h1, .categorie-section h1 a{
+  color:#fff;
+}
+.categorie-section .cat-title img{
+  width:40px;
+  height: 40px;
+  margin-right: 6px;
+}
 
+.categorie-section .start-entry{
+  border-top:5px #eee solid;
+}
+.categorie-section tr th.to-read,
+.categorie-section tr td.to-read,  
+.categorie-section tr th.last-message,
+.categorie-section tr td.last-message{
+    width: 30%;
+    border: none;
+}
+.categorie-section tr th.to-read a,
+.categorie-section tr td.to-read a{
+  color:#717171;
+}
+.categorie-section tr th.to-read a:hover,
+.categorie-section tr td.to-read a:hover{
+  color:#444444;
+}
+.categorie-section tr th.to-read,
+.categorie-section tr td.to-read {
+  border-left:5px #eee solid;
+}
+.categorie-section tr td.last-message,
+.categorie-section tr td.to-read {
+  border-bottom:1px #eee solid;
+}
+.categorie-section tr td.last-message {
+  font-size: 12px;
+  line-height: 15px;
+}
+.categorie-section tr td h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.categorie-section tr:hover {
+  background: #f5f5f5;
+}
+.categorie-section tr td.cat-description {
+    width:95%;
+    padding-left:20px;
+}
+.categorie-section tr.new-message .last-message {
+    font-weight: bold;
+}
+.categorie-section tr.new-message a {
+    color:#DF985D;
+}
+.categorie-section tr td.nb-message {
+  text-align: center;
+}
+.categorie-section tr th.date-rp {
+  width: 10%;
+}
+.forum-section tr td.cat-description {
+  width:80%;
+}
+.categorie-section th.cat-title, #other-forums h1 {
+  background: #DF985D;
+  border: 10px;
+  vertical-align: middle;
+  padding:5px;
+  color:#fff;
+  border-bottom:5px #eee solid;
+}
+.categorie-section th.main-title, .categorie-section #cat-1 th {
+  color:#fff;
+}
+.forum-section {
+  margin: 0px 0px;
+}
+.forum #accordion li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.forum #accordion {
+  margin: 20px 0px;
+  padding: 0;
+} 
+#other-forums h1 {
+    color:#fff;
+    margin: 20px 0px 0px 0px;
+}
+#other-forums ul {
+    background:#EEEEEE;
+    margin: 0;
+    padding:0;
+}
+#other-forums ul li{
+    background: #f5f5f5;
+    line-height: 30px;
+    margin-bottom: 3px;
+    list-style: none;
+    padding:10px 30px;
+}
+#other-forums ul li{
+    font-size: 18px;
+    font-weight: bold;
+    color:#666;
+}
+#other-forums ul li a{
+   color:#DF985D;
+}
+#other-forums ul li button {
+    border:none;
+    box-shadow: none;
+}
+.subject .pagination .active  a  {
+background: #DF985D;
+border-color: #CC8754;
+}
+
+
+/* Messages */
+.post {
+  clear:both;
+  background : none repeat scroll 0 0 #f5f5f5
+}
+.post aside {
+  width: 230px;
+  float:left;
+  margin-right: 30px;
+  text-align: center;
+  height: 100%;
+  background: #eee;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 30px;
+}
+.post aside h2 a {
+  color:#DF985D;
+  text-align: center;
+  font-size: 25px;
+}
+.post header {
+  padding: 15px;
+  background: #DF985D;
+  color: #fff;
+  text-align: right;
+  border-bottom:5px #eee solid;
+  font-weight: bold;
+}
+.post .post-message {
+  margin: 10px 10px 0px 10px;
+  text-align: justify;
+  line-height: 1.5;
+  padding:20px;
+  min-height: 400px;
+}
+.subject .btn {
+  margin:5px 0px;
+}
+.subtitle {
+  color:#444;
+  font-style: italic;
+  font-size: 18px;
+  width: 50%;
+}
+.date-rp {
+    font-size: 18px;
+      color:#444;
+      font-weight: bold;
+}
+
+.peoples .user-panel {
+  padding: 1%;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  border-bottom:5px #DF985D solid;
+  margin: 2% 2%;
+  overflow: hidden;
+}
+.peoples .user-panel:hover {
+  background: #333333;
+}
+.peoples .user-panel:hover img {
+  opacity: 0.95;
+}
+.peoples .user-panel h2 a{
+  color: #DF985D;
+  size:110%;
+}
+.peoples .user-panel h2 {
+  color: #fff;
+  font-size:170%;
+}
+.peoples .user-panel img {
+  border-color: #DF985D;
+}
+
+
+.character #character-presentation .user-panel  {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+.character #character-presentation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.character #character-presentation ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 120%;
+}
+.character #character-presentation  {
+  background: #f6f6f6;
+}
+.character #character-presentation  .user-panel {
+  background: #444;
+}
 
 @media(max-width:767px){
 .content {

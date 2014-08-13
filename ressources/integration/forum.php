@@ -9,18 +9,19 @@ include('parts/header.php'); ?>
         <li><a href="#">Le ministère de la magie</a></li>
         <li class="active">La salle d'entrainement</li>
     </ol>
-    <h1>
-        La salle d'entrainement [cattitle]
-    </h1>
-
 </section>
 
 <!-- Main content -->
 <section class="content forum">
+    <header>
+    <h1>
+        La salle d'entrainement [cattitle]
+    </h1>
+    </header>
 	<table class="table table-responsive categorie-section forum-section">
 	      <thead id="cat-1">
 	        <tr>
-	          <th colspan="2" class="cat-title main-title">                      
+	          <th colspan="1" class="cat-title main-title">                      
 	            <div class="pull-left">
 	            </div><h1><a href="#">La salle d'entrainement</a></h1>
 	          </th>
@@ -31,8 +32,7 @@ include('parts/header.php'); ?>
 	      </thead>
 	      <tbody>
 	      <?php for($j=1; $j <= 9; $j++) :?>
-	            <tr class="start-entry">
-		            <td class="cat-icon"></td>
+	            <tr class="start-entry <?php if($j%3 == 0):?>new-message<?php endif; ?>">
 		            <td class="cat-description">
 		              	<h2>
 		              		<a href="subject.php">Sujet <?php echo $j?></a>
@@ -51,18 +51,36 @@ include('parts/header.php'); ?>
 <div class='box collapsed-box'>
     <div class='box-header'>
     	<div class=" box-tools">
-		<span class="glyphicon glyphicon-share-alt"> </span> <h3 class='box-title' data-widget='collapse'>Nouveau sujet dans "Salle d'entrainement"</h3>
+		<span class="glyphicon glyphicon-share-alt"> </span> <h3 class='box-title' data-widget='collapse'>Nouveau sujet dans "La salle d'entrainement"</h3>
         </div><!-- /. tools -->
     </div><!-- /.box-header -->
     <div class='box-body pad'>
-        <form>
-            <textarea name="editor1" id="editor1" rows="10" cols="80">
-            </textarea>
-            <button type="button" class="btn btn-default">Répondre</button>                   
-        </form>
+    <form role="form">
+      <div class="form-group">
+        <label for="subjectTitle">Titre du sujet : </label>
+        <input type="text" class="form-control" id="subjectTitle" placeholder="Titre du sujet">
+      </div>
+        <!-- seulement si on se trouve dans un RP -->
+      <div class="form-group">
+        <label for="subjectDate">Date rôle play du RP</label>
+        <input type="text" class="form-control" id="subjectDate" placeholder="Date rôle play du RP">
+      </div>
+      <div class="form-group">
+        <label for="desctionSubject">Description du sujet</label> <br/>
+        <textarea id="desctionSubject" class="form-control" rows="3" ></textarea>
+      </div>
+      <button type="submit" class="btn btn-default">Enregistrer</button>
+    </form>
     </div>
 </div>
-
+<nav id="other-forums">
+    <h1>Le ministère de la magie</h1>
+    <ul>                          
+         <li><a href="forum.php" data-toggle="tooltip" data-placement="top" title="3 sujets non lus"> <span class="glyphicon glyphicon-star"></span> Bureau des Aurors </a> </li>
+         <li>Salle d'entrainement</li>
+         <li><a href="forum.php">Justice ministérielle</a></li>
+    </ul>
+</nav>
 </section><!-- /.content -->
 
 <?php $currenttpl = 'forum'; include('parts/footer.php'); ?>

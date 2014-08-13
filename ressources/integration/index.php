@@ -28,30 +28,22 @@ include('parts/header.php'); ?>
 <table class="table table-responsive categorie-section">
       <thead>
         <tr>
-          <th colspan="2" class="cat-title">                        
+          <th class="cat-title">                        
             <div class="pull-left">
                 <img src="img/icons/magicwand-bgless.png"/>
             </div><h1>Ministère de la magie</h1>
             </th>
-            <th class="to-read cat-title">A lire (4)</th>
-            <th class="last-message cat-title">Dernier message</th>
+            <th class="last-message cat-title"><span class="glyphicon glyphicon-star"></span></th>
         </tr>
       </thead>
       <tbody>
       <?php for($i=1; $i <= 5; $i++) :?>
-            <tr class="start-entry">
-              <td class="cat-icon"></td>
+            <tr class="start-entry <?php if($i%3 == 0):?>new-message<?php endif; ?>">
               <td class="cat-description">
                 <h2><a href="forum.php">La salle d'entrainement</a></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. </p>
               </td>
-              <td class="to-read">
-                <a href="#">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <span class="glyphicon glyphicon-share-alt  btn-xs"></span>
-                </a>
-                </td>
-              <td class="last-message"><a href="#">Esther Cromwell</a><br /> hier à 13h08</td>
+              <td class="last-messages"><a <?php if($i%3 == 0):?>data-toggle="tooltip" data-placement="top" title="3 sujets non lus" <?php endif; ?> href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></td>
             </tr>
     <?php endfor; ?>
       </tbody>
