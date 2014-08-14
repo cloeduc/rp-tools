@@ -1,0 +1,11 @@
+<script>
+    $('article.new-message a.display-last-messages').click(function(){
+        $(this).tooltip('hide');
+        $(this).children('span').toggleClass('glyphicon-chevron-right');
+        $(this).children('span').toggleClass('glyphicon-chevron-left');
+        $(this).parent().parent().children('.cat-description').slideToggle();
+        $(this).parent().children('.message-list').toggle('fade');
+        $(this).toggleClass('active');
+        return false;
+    });
+</script>
