@@ -22,7 +22,7 @@ $('#searchinpage').submit(function(){
 	      	{
 	      		block.parent('.skill-description').show();
 	      	}
-	        return ["<span class='highlight'>", match, "</span>"].join("");
+	        return ["<span class='highlight-search'>", match, "</span>"].join("");
 	      }));
 	});
 	var findingSentence = blocks.length + " \"" + phrase + " \"";
@@ -53,5 +53,7 @@ $('#searchinpage').submit(function(){
 		    	$('#currentsearch').html(currentblock+1);
 		    });
 	    }
-	}
+	} else {
+        $('#navigation-search').hide();
+    }
 });

@@ -8,12 +8,25 @@
         <script src="js/role-play-tools.js" type="text/javascript"></script>
 
         <!-- AdminLTE App -->
-        <script src="js/AdminLTE/app.js" type="text/javascript"></script>
+        <!--<script src="js/AdminLTE/app.js" type="text/javascript"></script>-->
         <!-- bootbox code -->
         <script src="js/plugins/bootbox/bootbox.min.js"></script>
-
         <script>
-         $(".alert").alert()
+            $(".treeview.active").each(function(){
+                $(this).children(".treeview-menu").show();
+            });
+            $(".treeview").click(function(){
+                $(this).children(".treeview-menu").slideToggle();
+            });
+        </script>
+        <script>
+         $(".alert").alert();
+            $( ".datepicker" ).datepicker(
+                {
+                    changeMonth: true,
+                    changeYear: true,
+                    defaultDate:'01/01/1989'
+                });
          $('.toggle-characters').click(function() {
             var $marginLefty = $(this).next();
             $marginLefty.animate({

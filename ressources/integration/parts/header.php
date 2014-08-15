@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery-ui-1.10.3.custom.min.css">
         <link rel="stylesheet" href="css/jquery-ui-bootstrap/jquery.ui.1.10.3.ie.min.css">
         <link href="css/AdminLTE.css" rel="stylesheet" type="text/css" />
-
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
         <link href="css/docs.min.css" rel="stylesheet" type="text/css" />
         <link href="css/roleplay-tools.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -28,8 +28,8 @@
         <!-- header logo: style can be found in header.less -->
         <header class="header">
             <a href="index.html" class="logo">
+                Le titre du site encore indéfini
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-               <img src="img/witchhat.png"/>
             </a>
         </header>
         <div class="wrapper container-fluid">

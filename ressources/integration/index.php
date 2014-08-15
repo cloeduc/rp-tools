@@ -24,7 +24,7 @@ include('parts/header.php'); ?>
     <section class="categorie-section">
         <header class="cat-title">
             <div class="pull-left">
-                <img src="img/icons/magicwand-bgless.png"/>
+                <img src="img/icons/magicwand.png"/>
             </div><h1>Ministère de la magie</h1>
 
         </header>

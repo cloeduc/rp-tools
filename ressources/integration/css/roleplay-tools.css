@@ -13,7 +13,13 @@
 .highlight {
     background-color:#FFFF00;	
 }
+.highlight-search {
+    background: #F0AD4E;
+}
 
+.modal {
+    top:5%;
+}
 /*Call outs */
 .bs-callout {
     background: #fff;
@@ -34,6 +40,56 @@
     border-left-color: #73C2AF;
 }
 
+/* header site */
+body > .header .logo  {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:#f7f7f7;
+    padding-top: 15px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+a.toggle-characters {
+  left: -75px;
+  position: absolute;
+  top: 55px;
+  z-index: 100;
+  background: #333;
+  padding:10px;
+    margin-left: 220px;
+-webkit-border-top-left-radius: 50px;
+-webkit-border-bottom-left-radius: 50px;
+-moz-border-radius-topleft: 50px;
+-moz-border-radius-bottomleft: 50px;
+border-top-left-radius: 50px;
+border-bottom-left-radius: 50px;
+  cursor: pointer;
+}
+.sidebar {
+    margin-top:80px;
+}
+
+.sidebar-userpanel {
+    margin-left: 220px;
+    margin-top:55px;
+}
+.user-panel {
+    width:220px;
+}
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu a{
+    padding-left:35px;
+}
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu {
+    background: none;
+    margin: 0px;
+}
+.skin-black .sidebar > .sidebar-menu > li > .treeview-menu a:hover {
+    background: #555;
+}
+.skin-black .sidebar > .sidebar-menu > li.active > .treeview-menu {
+    background: #444;
+}
 /* Progress bar*/
 .progress-bar 
 {
@@ -210,6 +266,7 @@ section.skills header h1{
     padding: 10px;
     margin: 0px;
 }
+
 section.skills .character-skill {
     border-radius: 5px;
     height:110px;
@@ -320,6 +377,78 @@ input.progress-input {
 }
 .danger {
 color:#C85D5D;!important
+}
+
+/* CONNEXION BOX */
+li#connexion {
+    background: #444;
+    padding-bottom: 10px;
+}
+#connexion form {
+    width:80%;
+    margin: auto;
+}
+#suscribe img {
+    height: 40px;
+    margin: 5px;
+    width: 40px;
+}
+
+/*Inscription modal*/
+#modal-inscription .modal-header {
+    margin-bottom: 15px;
+}
+#modal-inscription .modal-header img{
+    width: 40px;
+    height: 40px;
+}
+#modal-inscription .modal-content {
+    padding:15px;
+}
+/* USER PANEL */
+
+.user-panel {
+  padding: 10px;
+}
+.user-panel h2 {
+  margin: 5px 0px 10px 0px;
+}
+.user-panel:before,
+.user-panel:after {
+  display: table;
+  content: " ";
+}
+.user-panel:after {
+  clear: both;
+}
+.user-panel .image img {
+  width: 100%;
+}
+
+.peoples .user-panel > .image > img, .subject .user-panel > .image > img, .character .user-panel > .image > img {
+  width: 200px;
+  height: auto;
+}
+.user-panel > .info {
+  font-weight: 600;
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+  line-height: 1;
+}
+.user-panel > .info > p {
+  margin-bottom: 9px;
+}
+.user-panel > .info > a {
+  text-decoration: none;
+  padding-right: 5px;
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: normal;
+}
+.user-panel > .info > a > .fa,
+.user-panel > .info > a > .ion,
+.user-panel > .info > a > .glyphicon {
+  margin-right: 3px;
 }
 
 /* profil */
@@ -481,6 +610,15 @@ position: absolute;
   padding:5px;
   color:#fff;
     position: relative;
+}
+.categorie-section header.cat-title {
+border-top-right-radius: 30px;
+}
+.categorie-section .cat-title img {
+    width: 53px;
+    height:53px;
+    margin-left: -35px;
+    margin-top: -5px;
 }
 
 /* Tables */

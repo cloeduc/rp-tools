@@ -82,16 +82,6 @@ body > .header {
   background-color: #333;
 }
 
-a.toggle-characters {
-  left: -75px;
-  position: absolute;
-  top: 55px;
-  z-index: 100;
-  background: #333;
-  padding:10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
 @media screen and (min-width: 992px) {
   .left-side {
     top: 50px;
@@ -578,50 +568,7 @@ body > .header .logo .icon {
 .sidebar .sidebar-menu .treeview-menu > li > a > .ion {
   width: 20px;
 }
-.user-panel {
-  padding: 10px;
-}
-.user-panel h2 {
-  margin: 5px 0px 10px 0px;
-}
-.user-panel:before,
-.user-panel:after {
-  display: table;
-  content: " ";
-}
-.user-panel:after {
-  clear: both;
-}
-.user-panel > .image > img {
-  width: 200px;
-  height: 200px;
-}
 
-.peoples .user-panel > .image > img, .subject .user-panel > .image > img, .character .user-panel > .image > img {
-  width: 200px;
-  height: auto;
-}
-.user-panel > .info {
-  font-weight: 600;
-  padding: 5px 5px 5px 15px;
-  font-size: 14px;
-  line-height: 1;
-}
-.user-panel > .info > p {
-  margin-bottom: 9px;
-}
-.user-panel > .info > a {
-  text-decoration: none;
-  padding-right: 5px;
-  margin-top: 3px;
-  font-size: 11px;
-  font-weight: normal;
-}
-.user-panel > .info > a > .fa,
-.user-panel > .info > a > .ion,
-.user-panel > .info > a > .glyphicon {
-  margin-right: 3px;
-}
 
 /*
  * Off Canvas
@@ -2488,6 +2435,9 @@ Component: timeline
   width:40px;
   height: 40px;
   margin: 5px;
+}
+.treeview {
+    margin-bottom:10px;
 }
  .sidebar-menu > li >  a{
   line-height: 45px;

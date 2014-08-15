@@ -45,7 +45,7 @@ include('parts/header.php'); ?>
 </ul>
 <?php for($i=1; $i <= 3; $i++) :?>
 	<article class="post">
-		<header><a name="p<?php echo $i ?>" Message posté le 16 juillet 2014 à 17h36 </header>
+		<header><a name="p<?php echo $i ?>"></a> Message posté le 16 juillet 2014 à 17h36 </header>
 		<aside class="messageinfo user-panel">
             <div class="image">
                 <img src="img/avatars/nao-portrait.jpg" alt="User Image" />

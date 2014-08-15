@@ -63,7 +63,7 @@ include('parts/header.php'); ?>
         <!-- seulement si on se trouve dans un RP -->
       <div class="form-group">
         <label for="subjectDate">Date rôle play du RP</label>
-        <input type="text" class="form-control" id="subjectDate" placeholder="Date rôle play du RP">
+        <input type="text" class="datepicker form-control" id="subjectDate" placeholder="Date rôle play du RP">
       </div>
       <div class="form-group">
         <label for="desctionSubject">Description du sujet</label> <br/>
