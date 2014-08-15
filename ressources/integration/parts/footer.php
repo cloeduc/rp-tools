@@ -7,8 +7,6 @@
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/role-play-tools.js" type="text/javascript"></script>
 
-        <!-- AdminLTE App -->
-        <!--<script src="js/AdminLTE/app.js" type="text/javascript"></script>-->
         <!-- bootbox code -->
         <script src="js/plugins/bootbox/bootbox.min.js"></script>
         <script>
