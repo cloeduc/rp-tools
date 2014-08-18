@@ -19,6 +19,7 @@
         </script>
         <script>
          $(".alert").alert();
+            $('a[data-toggle=tooltip]').tooltip();
             $( ".datepicker" ).datepicker(
                 {
                     changeMonth: true,
